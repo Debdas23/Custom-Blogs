@@ -1,0 +1,3 @@
+administer custom_blogs_blogs:
+  title: 'Administer blogs'
+  restrict access: true

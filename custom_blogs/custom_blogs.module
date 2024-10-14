@@ -1,0 +1,46 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Provides a blogs entity type.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function custom_blogs_theme(): array {
+  return [
+    'custom_blogs_blogs' => ['render element' => 'elements'],
+  ];
+}
+
+/**
+ * Prepares variables for blogs templates.
+ *
+ * Default template: custom-blogs-blogs.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the blogs information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_custom_blogs_blogs(array &$variables): void {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+
+/**
+ * Implements hook_preprocess_HOOK() for your template.
+ */
+function custom_blogs_preprocess_page(array &$variables) {
+  // Attach the Bootstrap library.
+  $variables['#attached']['library'][] = 'custom_blogs/bootstrap';
+}

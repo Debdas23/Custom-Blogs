@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_blogs
+id: custom_blogs_blogs_save_action
+label: 'Save blogs'
+type: custom_blogs_blogs
+plugin: entity:save_action:custom_blogs_blogs
+configuration: {  }

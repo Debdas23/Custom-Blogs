@@ -1,0 +1,10 @@
+entity.custom_blogs_blogs.edit_form:
+  route_name: entity.custom_blogs_blogs.edit_form
+  group: custom_blogs_blogs
+  title: 'Edit'
+
+entity.custom_blogs_blogs.delete_form:
+  route_name: entity.custom_blogs_blogs.delete_form
+  group: custom_blogs_blogs
+  title: 'Delete'
+  weight: 10

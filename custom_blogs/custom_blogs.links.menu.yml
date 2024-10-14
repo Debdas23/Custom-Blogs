@@ -1,0 +1,11 @@
+entity.custom_blogs_blogs.settings:
+  title: 'Blogs'
+  description: 'Configure a Blogs entity type.'
+  route_name:  entity.custom_blogs_blogs.settings
+  parent: system.admin_structure
+
+entity.custom_blogs_blogs.collection:
+  title: 'Custom Blogs'
+  description: 'List of blogs.'
+  route_name: entity.custom_blogs_blogs.collection
+  parent: system.admin_content

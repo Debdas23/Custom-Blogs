@@ -1,0 +1,7 @@
+entity.custom_blogs_blogs.settings:
+  path: 'admin/structure/custom-blogs-blogs'
+  defaults:
+    _form: '\Drupal\custom_blogs\Form\BlogsSettingsForm'
+    _title: 'Blogs'
+  requirements:
+    _permission: 'administer custom_blogs_blogs'

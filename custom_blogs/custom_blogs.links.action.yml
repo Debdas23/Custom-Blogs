@@ -1,0 +1,5 @@
+custom_blogs_blogs.add_form:
+  title: 'Add blogs'
+  route_name: entity.custom_blogs_blogs.add_form
+  appears_on:
+    - entity.custom_blogs_blogs.collection

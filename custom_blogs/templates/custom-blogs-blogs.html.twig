@@ -1,0 +1,45 @@
+{#
+/**
+ * @file
+ * Default theme implementation to present a blogs entity.
+ *
+ * This template is used when viewing a canonical blogs page.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.label'.
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_custom_blogs_blogs()
+ */
+#}
+
+<article{{ attributes }}>
+  {% if view_mode != 'full' %}
+    {{ title_prefix }}
+    {{ title_suffix }}
+  {% endif %}
+
+  {% if content %}
+    <div class="table-responsive"> <!-- Make the table responsive -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>{{ 'Title'|t }}</th>
+            <th>{{ 'Description'|t }}</th>
+            <th>{{ 'Created Date'|t }}</th>
+            <th>{{ 'Created Status'|t }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ content.title }}</td>
+            <td>{{ content.description }}</td>
+            <td>{{ content.created }}</td>
+            <td>{{ content.status }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+</article>

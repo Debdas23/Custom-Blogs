@@ -1,0 +1,22 @@
+entity.custom_blogs_blogs.settings:
+  title: 'Settings'
+  route_name: entity.custom_blogs_blogs.settings
+  base_route: entity.custom_blogs_blogs.settings
+entity.custom_blogs_blogs.view:
+  title: 'View'
+  route_name: entity.custom_blogs_blogs.canonical
+  base_route: entity.custom_blogs_blogs.canonical
+entity.custom_blogs_blogs.edit_form:
+  title: 'Edit'
+  route_name: entity.custom_blogs_blogs.edit_form
+  base_route: entity.custom_blogs_blogs.canonical
+entity.custom_blogs_blogs.delete_form:
+  title: 'Delete'
+  route_name: entity.custom_blogs_blogs.delete_form
+  base_route: entity.custom_blogs_blogs.canonical
+  weight: 10
+entity.custom_blogs_blogs.collection:
+  title: 'Blogs'
+  route_name: entity.custom_blogs_blogs.collection
+  base_route: system.admin_content
+  weight: 10

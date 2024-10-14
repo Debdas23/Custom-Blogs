@@ -1,0 +1,5 @@
+name: 'Custom blogs'
+type: module
+description: 'The assessment is designed to evaluate your knowledge and practical skills in Drupal CMS by creating a custom content type, templates, and implementing front-end functionality with DataTables or Bootstrap.'
+package: 'Custom'
+core_version_requirement: ^10

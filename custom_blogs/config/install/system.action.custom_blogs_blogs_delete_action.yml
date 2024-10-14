@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_blogs
+id: custom_blogs_blogs_delete_action
+label: 'Delete blogs'
+type: custom_blogs_blogs
+plugin: entity:delete_action:custom_blogs_blogs
+configuration: {  }
